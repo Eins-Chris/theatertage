@@ -1,6 +1,5 @@
 html {
     font-family: sans-serif;
-    height: 100%;
 }
 
 body {
@@ -104,8 +103,8 @@ ul {
     background-color: #236425;
 }
 
+
 .footer {
-    width: 100;
     background-color: #e0e0e0;
     border-bottom: 1px solid #e4ebf3;
     padding: 50px 30px 15px;
@@ -113,8 +112,6 @@ ul {
 }
 
 .footer-wrapper {
-    width: 100%;
-    max-width: 940px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +150,7 @@ ul {
     grid-template-rows: auto;
     grid-template-columns: auto auto 1fr;
     grid-auto-columns: 1fr;
+    place-self: center;
 }
 
 .footer-block {
