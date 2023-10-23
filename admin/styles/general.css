@@ -116,6 +116,8 @@ ul {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-divider {
@@ -134,6 +136,7 @@ ul {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-content {
@@ -198,6 +201,7 @@ ul {
     text-align: center;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
 }
 
 
