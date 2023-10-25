@@ -11,6 +11,7 @@
 </head>
 
 <body class="body">
+
     <section class="nav">
         <div class="nav-wrapper">
             <a href="/" class="nav-logo"><img src="admin/img/nav_logo.png" width="80" alt=""></a>
@@ -23,7 +24,12 @@
                     <li><a href="ablauf/" class="nav-link rem">Ablaufplan</a></li>
                     <li><a href="teilnehmer/" class="nav-link rem">Teilnehmer</a></li>
                     <li><a href="about/" class="nav-link rem">About Us</a></li>
-                    <div class="nav-link nav-dropdown">Infos<!--(Newsletter und Ablaufplan)--></div>
+                    <div class="nav-link nav-dropdown">Infos<!--(Newsletter und Ablaufplan)-->
+                        <ul class="nav-sub-menu">
+                            <li><a href="news/">Newsletter</a></li>
+                            <li><a href="ablauf/">Ablaufplan</a></li>
+                        </ul>
+                    </div>
                     <div class="nav-link nav-dropdown">About<!--(Teilnehmer und About Us)--></div>
                     <div class="nav-divider"></div>
                     <li><a href="https://gmg.amberg.de" target="_blank" class="nav-button">GMG Amberg</a></li>
@@ -46,9 +52,9 @@
 
     <section class="footer">
         <div class="footer-divider"></div>
-        <div class="footer-info">
+        <nav class="footer-info">
             <a href="/" class="footer-logo"><img src="admin/img/logo.png" width="200" alt=""></a>
-            <div class="footer-blocks">
+            <ul class="footer-blocks">
                 <div class="footer-block">
                     <div class="footer-title">Information</div>
                     <a href="impressum/" class="footer-link">Impressum</a>
@@ -69,10 +75,12 @@
                         <a href="https://www.tiktok.com" target="_blank" class="footer-socials-logo"><img src="admin/img/tiktok.png" width="24" alt=""></a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </ul>
+        </nav>
         <div class="footer-divider"></div>
-        <div class="copyright">Copyright © 2023 - 2024 PR-Seminar GMG Amberg</div>
+        <div class="footer-copyright">Copyright © 2023 - 2024 PR-Seminar GMG Amberg</div>
     </section>
+
+    <script src="admin/scripts/general.js"></script>
 
 </body>
