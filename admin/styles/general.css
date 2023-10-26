@@ -22,7 +22,6 @@ body {
 }
 
 .nav-wrapper {
-    margin: 12 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +59,10 @@ body {
 }
 
 .nav-dropdown {
+    display: none;
+}
+
+.nav-big-dropdown {
     display: none;
 }
 
@@ -163,23 +166,11 @@ body {
 
 @media screen and (max-width: 940px) {
     /*
-        NAVBAR KLEINER MACHEN (DONE)
+        NAVBAR KLEINER MACHEN (DONE) + MINI DROPDOWN (INFO UND ÁBOUT)
     */
 
     .nav-dropdown {
         display: unset;
-    }
-
-    .nav-sub-menu {
-        
-    }
-
-    .nav-sub-menu.show {
-        
-    }
-
-    .nav-sub-menu a {
-
     }
 
     .rem {
@@ -206,6 +197,36 @@ body {
     .nav-link {
         display: none;
     }
+
+    .nav-elements {
+        padding-left: 0;
+    }
+
+    .nav-big-dropdown {
+        display: unset;
+        padding-left: 30px;
+    }
+
+    .nav-big-dropdown .nav-big-sub-menu {
+        display: none;
+    }
+
+    .nav-big-dropdown .nav-big-sub-menu.show {
+        display: unset;
+    }
+
+    .nav-dropdown {
+        display: none;
+    }
+
+    .nav-big-dropdown-text {
+        display: unset;
+    }
+
+    .nav-big-dropdown-symbol {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -220,9 +241,27 @@ body {
     .nav-logo {
         display: none;
     }
+
+    .nav-wrapper {
+        justify-content: space-between;
+        margin: 0 25px;
+    }
     
     .nav-elements {
         display: none;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-big-dropdown-text {
+        display: none;
+    }
+
+    .nav-big-dropdown-symbol {
+        display: unset;
+        cursor: pointer;
     }
 
 

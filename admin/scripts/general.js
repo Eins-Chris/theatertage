@@ -1,11 +1,22 @@
 const navDropdown = document.getElementsByClassName("nav-dropdown")[0];
 const navSubMenu = document.getElementsByClassName("nav-sub-menu")[0];
+const bigNavDropDown = document.getElementsByClassName("nav-big-dropdown")[0];
+const bigNavSubMenu = document.getElementsByClassName("nav-big-sub-menu")[0];
 
-let navShown = false;
+let navToggle = false;
 
 navDropdown.onclick = (event) => {
-  navShown = !navShown;
+  navToggle = !navToggle;
 
-  if (navShown) navSubMenu.classList.add("show")
+  if (navToggle) navSubMenu.classList.add("show")
   else navSubMenu.classList.remove("show");
+}
+
+let bigNavToggle = false;
+
+bigNavDropDown.onclick = (event) => {
+  bigNavToggle = !bigNavToggle;
+
+  if (bigNavToggle) bigNavSubMenu.classList.add("show")
+  else bigNavSubMenu.classList.remove("show");
 }
