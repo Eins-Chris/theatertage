@@ -1,3 +1,123 @@
-/*
-    INSERT CONTENT CSS CODE
-*/
+.content {
+    margin: 50px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.group {
+    width: 840px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.group:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.group h1 {
+    text-align: center;
+    margin: 15px auto 15px auto;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.group .divider {
+    height: 2px;
+    background-color:antiquewhite;
+    margin: 10px;
+}
+
+.group .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.gemeinden .list a img {
+    margin: 0 9px 10px 9px;
+    height: 130px;
+}
+
+.firmen .sponsor a img {
+    margin: 0 9px 5px 9px;
+    height: 78px;
+}
+
+.firmen .sponsor a .rounded {
+    border-radius: 10px;
+}
+
+.firmen .sponsor a h2 {
+    display: none;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.private .list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.private .list .loop {
+    display: flex;
+    animation: 30s slide infinite linear;
+}
+
+.private .list .loop .private {
+    background-color: #3333;
+    font-size: 24px;
+    padding: 5px 10px;
+    margin: 7px;
+    border-radius: 5px;
+}
+
+.private:hover .list .loop {
+    animation-play-state: paused;
+}
+
+@media screen and (max-width: 940px) {
+    .group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .firmen .sponsor a img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .firmen .sponsor a img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .gemeinden .list img {
+        height: 80px;
+    }
+
+    .firmen .sponsor a img {
+        height: 40px;
+    }
+}
