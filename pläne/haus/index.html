@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Theatertage - Schulhausplan</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../../admin/styles/general.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="../../admin/img/shortcut.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../../admin/img/webicon.png" rel="apple-touch-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(function () {
+            $(".nav").load("../../admin/preset/sub_nav.html");
+            $(".footer").load("../../admin/preset/sub_footer.html");
+            $(".countdown").load("../../admin/preset/countdown.html");
+        })
+    </script>
+</head>
+
+<body>
+    <section class="nav"></section>
+    <section class="countdown"></section>
+
+    <section class="content">
+        <div class="wrapper">
+            <div class="group">
+                <div class="header">
+                    <div class="stockwerk">
+                        <h1>Stockwerk</h1>
+                    </div>
+                    <div class="floors">
+                        <div class="f-wrapper selected" id="f0" onclick="f0()">
+                            <div class="floor">0</div>
+                        </div>
+                        <div class="f-wrapper" id="f1" onclick="f1()">
+                            <div class="floor">1</div>
+                        </div>
+                        <div class="f-wrapper" id="f2" onclick="f2()">
+                            <div class="floor">2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <section class="b-wrapper selected" id="b0">
+                        <img src="../../admin/img/floor_0.svg" alt="Ebene0">
+                    </section>
+                    <section class="b-wrapper" id="b1">
+                        <img src="../../admin/img/floor_1.svg" alt="Ebene1">
+                    </section>
+                    <section class="b-wrapper" id="b2">
+                        <img src="../../admin/img/floor_2.svg" alt="Ebene2">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer"></section>
+    <script src="../../admin/scripts/general.js"></script>
+    <script src="../../admin/scripts/countdown.js"></script>
+    <script src="../../admin/scripts/hausplan.js"></script>
+</body>

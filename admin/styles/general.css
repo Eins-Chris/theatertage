@@ -166,22 +166,23 @@ body {
     line-height: 40px;
 }
 
-.boxes {
+.countdown .boxes {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 0 20px;
 }
 
-.count {
+.countdown .count {
     background-color: #6CAF50;
     padding: 12px;
     margin: 2px;
     font-size: 26px;
     border-radius: 8px;
+    text-align: center;
 }
 
-.box p {
+.countdown .box p {
     margin: 1px 1px 12px 1px;
     text-align: center;
     font-size: 10px

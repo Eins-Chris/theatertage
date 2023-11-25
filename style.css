@@ -9,3 +9,11 @@
     flex-direction: column;
     margin: 0 50px;
 }
+
+.zenger {
+    display: flex;
+}
+
+.zenger .text {
+    
+}
