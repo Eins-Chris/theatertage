@@ -137,7 +137,6 @@ body {
     transition: .5s;
     position: relative;
     left: 100%;
-    transition: .5s;
 }
 
 .nav-sub-menu.show a {

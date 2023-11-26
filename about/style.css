@@ -10,14 +10,6 @@
     margin: 0 50px;
 }
 
-.structure {
-    width: 840px;
-    margin: 10px 0;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
 .group {
     width: 840px;
     margin: 10px 0;
@@ -32,11 +24,46 @@
     transition: .5s;
 }
 
-h1 {
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
     text-align: center;
-    margin: 15px auto 15px auto;
+    margin: 15px 0;
     font-size: 30px;
     line-height: 26px;
+}
+
+.toggle {
+    display: flex;
+    margin: 4px 0 0 10px;
+}
+
+.toggle .element {
+    background-color: black;
+    width: 4px;
+    height: 20px;
+    margin: 0 4px;
+    transition: .5s;
+}
+
+.toggle .l {
+    transform: rotate(-45deg);
+}
+
+.toggle .r {
+    transform: rotate(45deg);
+}
+
+.selected .header .toggle .l {
+    transform: rotate(45deg);
+}
+
+.selected .header .toggle .r {
+    transform: rotate(-45deg);
 }
 
 .divider {
@@ -45,40 +72,27 @@ h1 {
     margin: 10px;
 }
 
-.structure .list {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
-.structure .list h2 {
-    margin: 40px 25px 10px 25px;
-    font-size: 25px;
-}
-
-.structure .list a {
-    margin: 0 30px 0 40px;
-    font-size: 20px;
-    line-height: 25px;
-    text-decoration: none;
-}
-
 .group .list {
+    display: none;
     padding-bottom: 20px;
 }
 
-.group .list h2 {
+.selected .list {
+    display: unset;
+}
+
+.selected .list h2 {
     margin: 40px 25px 10px 25px;
     font-size: 25px;
     line-height: 25px;
 }
 
-.group .list h3 {
+.selected .list h3 {
     margin: 26px 30px 8px 40px;
     font-size: 20px;
 }
 
-.group .list p {
+.selected .list p {
     margin: 0 30px 0 40px;
     font-size: 16px;
     line-height: 24px;
@@ -86,10 +100,6 @@ h1 {
 }
 
 @media screen and (max-width: 940px) {
-    .structure {
-        width: 100%;
-    }
-
     .group {
         width: 100%;
     }
