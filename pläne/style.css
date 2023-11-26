@@ -51,3 +51,17 @@
 .group.right {
     margin-left: 20px;
 }
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .group.left {
+        margin: 10px 0;
+    }
+
+    .group.right {
+        margin: 10px 0;
+    }
+}
