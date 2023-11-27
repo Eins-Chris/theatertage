@@ -18,11 +18,14 @@
     </script>
 </head>
 
-<body>
+<body onload="load()">
     <section class="nav"></section>
     <section class="countdown"></section>
+    <section class="dmtoggle" id="dmtoggle" onclick="toggle()">
+        <span class="switch"></span>
+    </section>
 
-    <section class="content" id="content" onclick="toggle()">
+    <section class="content" id="content">
         <div class="diashow group">
             <div class="images">
                 <img src="admin/img/gruppenbild.png" alt="">

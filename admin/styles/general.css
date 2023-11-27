@@ -35,6 +35,11 @@ body {
 }
 
 
+/*
+    GENERAL STUFF
+*/
+
+
 .nav {
     background-color: #4caf50;
     margin: 0 auto;
@@ -206,9 +211,61 @@ body {
 
 
 .dmtoggle {
-    
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 27px;
+    height: 48px;
+    width: 120px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+    background-color: c4c4c4;
+    background-image: url(../img/light.jpg);
+    background-size: cover;
 }
 
+.dmtoggle .switch {
+    display: block;
+    margin: 2px;
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.25), inset 5px 0px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.dmtoggle.toggle {
+    background-image: url(../img/dark.jpg);
+}
+
+.dmtoggle.toggle .switch {
+    transform: translateX(calc(120px - 48px));
+}
+
+/*
+.dmtoggle .button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dmtoggle .button .mode {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    background: rgb(59, 59, 154);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dmtoggle .button .mode img {
+    height: 30px;
+    width: 30px;
+}
+*/
 
 .footer {
     margin: 0 auto;
