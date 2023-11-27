@@ -35,11 +35,6 @@ body {
 }
 
 
-/*
-    GENERAL STUFF
-*/
-
-
 .nav {
     background-color: #4caf50;
     margin: 0 auto;
@@ -207,6 +202,11 @@ body {
     margin: 1px 1px 12px 1px;
     text-align: center;
     font-size: 10px
+}
+
+
+.dmtoggle {
+    
 }
 
 
