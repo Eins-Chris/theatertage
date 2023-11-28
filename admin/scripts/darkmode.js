@@ -1,51 +1,43 @@
 var tog;
 
-function check() {
-    if (localStorage.getItem('darkmode') == null) {
-        tog = false;
+function darkmode() {
+    initialize();
+    toggle();
+    set(tog);
+}
+
+function checkDarkmode() {
+    initialize();
+    set(tog);
+}
+
+function initialize() {
+    if (localStorage.getItem('darkmode') == null || localStorage.getItem('darkmode') == undefined) {
+        tog = 0;
     } else {
         tog = localStorage.getItem('darkmode');
     }
 }
 
 function toggle() {
-    if (localStorage.getItem('darkmode') == null) {
-        tog = false;
+    console.log('1.1' + tog);
+    if (tog == 1) {
+        tog = 0;
+        console.log('set to 0');
+    } else if (tog == 0) {
+        tog = 1;
+        console.log('set to 1');
     } else {
-        tog = localStorage.getItem('darkmode');
+        console.log('ERROR MAN WAS IS DENN JETZ LOS?!?!');
     }
-
-    if (tog == 'true') {
-        tog = false;
-    } else {
-        tog = true;
-    }
-
+    console.log('1.2' + tog);
     localStorage.setItem('darkmode', tog);
-
-    console.log(tog);
-    set(tog);
-}
-
-function load() {
-    check();
-
-    console.log(tog);
-    if (tog == false) {
-        document.getElementById("content").classList.remove("darkmode");
-        document.getElementById("dmtoggle").classList.remove("toggle");
-    } else {
-        document.getElementById("content").classList.add("darkmode");
-        document.getElementById("dmtoggle").classList.add("toggle");
-    }
 }
 
 function set(on) {
-    if (on) {
-        document.getElementById("content").classList.add("darkmode");
-        document.getElementById("dmtoggle").classList.add("toggle");
+    if (on == 1) {
+        document.getElementsByClassName("body")[0].classList.add("darkmode");
     } else {
-        document.getElementById("content").classList.remove("darkmode");
-        document.getElementById("dmtoggle").classList.remove("toggle");
+        document.getElementsByClassName("body")[0].classList.remove("darkmode");
     }
 }

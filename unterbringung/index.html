@@ -18,13 +18,17 @@
     </script>
 </head>
 
-<body>
+<body class="body" id="body" onload="checkDarkmode()">
     <section class="nav"></section>
     <section class="countdown"></section>
+    <section class="dmtoggle" onclick="darkmode()">
+        <span class="switch"></span>
+    </section>
 
     <section class="content"></section>
 
     <section class="footer"></section>
     <script src="../admin/scripts/general.js"></script>
     <script src="../admin/scripts/countdown.js"></script>
+    <script src="../admin/scripts/darkmode.js"></script>
 </body>

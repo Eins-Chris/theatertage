@@ -18,25 +18,15 @@
     </script>
 </head>
 
-<body>
+<body class="body" id="body" onload="checkDarkmode()">
     <section class="nav"></section>
     <section class="countdown"></section>
+    <section class="dmtoggle" onclick="darkmode()">
+        <span class="switch"></span>
+    </section>
 
     <section class="content">
         <div class="wrapper">
-            <!--
-            <div class="structure">
-                <h1>Gliederung</h1>
-                <div class="divider"></div>
-                <div class="list">
-                    <h2>Über..</h2>
-                    <a href="#Schüler">..uns Schüler</a>
-                    <a href="#P-Seminar">..das P-Seminar</a>
-                    <a href="#GMG">..das GMG</a>
-                    <a href="#Amberg">..Amberg</a>
-                </div>
-            </div>
-            -->
             <div class="group" id="Schüler">
                 <h1>Über uns Schüler</h1>
                 <div class="divider"></div>
@@ -84,5 +74,5 @@
     <section class="footer"></section>
     <script src="../admin/scripts/general.js"></script>
     <script src="../admin/scripts/countdown.js"></script>
-    <script src="../admin/scripts/about.js"></script>
+    <script src="../admin/scripts/darkmode.js"></script>
 </body>
