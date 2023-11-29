@@ -39,11 +39,26 @@ html {
     background-color: #252424;
 }
 
-.body.darkmode .group {
+.body.darkmode .content .wrapper .group {
     color: #d3d3d3;
     background-color: #2f2f2f;
 }
 
+.body.darkmode .content .wrapper .group .box {
+    color: #d3d3d3;
+    background-color: #212121;
+}
+
+
+/*Pläne select button color change*/
+.body.darkmode .content .wrapper .group .header .days .selected {
+    color: #d3d3d3;
+    background-color: #212121;
+}
+.body.darkmode .content .wrapper .group .header .floors .selected {
+    color: #d3d3d3;
+    background-color: #212121;
+}
 
 
 .nav {
