@@ -65,6 +65,10 @@ h1 {
     text-align: justify;
 }
 
+.group .list p a {
+    color: rgb(76, 76, 241);
+}
+
 @media screen and (max-width: 940px) {
     .group {
         width: 100%;
