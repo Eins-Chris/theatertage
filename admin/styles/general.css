@@ -49,6 +49,11 @@ html {
     background-color: #212121;
 }
 
+.body.darkmode .content .wrapper .blogpost {
+    color: #d3d3d3;
+    background-color: #2f2f2f;
+}
+
 
 /*Pläne select button color change*/
 .body.darkmode .content .wrapper .group .header .days .selected {
