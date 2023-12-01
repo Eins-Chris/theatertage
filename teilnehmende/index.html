@@ -12,18 +12,15 @@
     <script>
         $(function() {
             $(".nav").load("../admin/preset/nav.html");
+            $(".header").load("../admin/preset/header.html");
             $(".footer").load("../admin/preset/footer.html");
-            $(".countdown").load("../admin/preset/countdown.html");
         })
     </script>
 </head>
 
 <body class="body" id="body" onload="checkDarkmode()">
     <section class="nav"></section>
-    <section class="countdown"></section>
-    <section class="dmtoggle" onclick="darkmode()">
-        <span class="switch"></span>
-    </section>
+    <section class="header"></section>
 
     <section class="content">
         <h1>Da die Teilnehmer noch nicht feststehen werden sie hier erst angezeigt wenn eine genaue Liste feststeht.</h1>
