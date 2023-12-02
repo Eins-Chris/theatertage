@@ -10,10 +10,11 @@
     margin: 0 50px;
 }
 
-.zenger {
-    display: flex;
+h1 {
+    text-align: center;
+    margin: 0 50px;
 }
 
-.zenger .text {
-    
+.zenger {
+    display: flex;
 }
