@@ -10,7 +10,72 @@
     margin: 0 50px;
 }
 
+.group {
+    width: 840px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.group:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
 h1 {
     text-align: center;
-    margin: 0 50px;
+    margin: 15px 0;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.group .list h2 {
+    margin: 40px 25px 10px 25px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.group .list h3 {
+    margin: 26px 20px 8px 20px;
+    font-size: 20px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #4caf50;
+    margin: 10px;
+}
+
+.group .list {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.group .list p {
+    margin: 8px 30px 5px 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.group .list p a {
+    color: #248112;
+    text-decoration: none;
+}
+
+.group .list ul {
+    margin: 8px 30px 5px 30px;
+    padding: 0 0 0 15px;
+}
+
+.group .list ul li {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 940px) {
+    .group {
+        width: 100%;
+    }
 }

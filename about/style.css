@@ -31,6 +31,17 @@ h1 {
     line-height: 26px;
 }
 
+.group .list h2 {
+    margin: 40px 25px 10px 25px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.group .list h3 {
+    margin: 26px 20px 8px 20px;
+    font-size: 20px;
+}
+
 .divider {
     height: 2px;
     background-color: #4caf50;
@@ -39,28 +50,18 @@ h1 {
 
 .group .list {
     padding-bottom: 20px;
-}
-
-.group .list h2 {
-    margin: 40px 25px 10px 25px;
-    font-size: 25px;
-    line-height: 25px;
-}
-
-.group .list h3 {
-    margin: 26px 30px 8px 40px;
-    font-size: 20px;
+    text-align: justify;
 }
 
 .group .list p {
-    margin: 0 30px 0 40px;
+    margin: 8px 30px 5px 30px;
     font-size: 16px;
     line-height: 24px;
-    text-align: justify;
 }
 
 .group .list p a {
     color: rgb(76, 76, 241);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 940px) {

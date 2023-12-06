@@ -122,6 +122,10 @@ html {
     text-decoration: none;
 }
 
+.nav-dropdown {
+    cursor: pointer;
+}
+
 .nav-divider {
     width: 1px;
     height: 22px;
@@ -158,6 +162,10 @@ html {
 
 .nav-big-dropdown {
     display: none;
+}
+
+.nav-big-dropdown-text {
+    cursor: pointer;
 }
 
 .nav-sub-menu {
