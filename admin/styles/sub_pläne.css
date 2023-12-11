@@ -1,0 +1,202 @@
+.plan {
+    width: 840px;
+    margin: 10px 0;
+    background-color: rgb(234, 234, 234);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.h-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.h-wrapper .month {
+    margin: 0 40px;
+    color: #409443;
+}
+
+.h-wrapper .month h1 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.h-wrapper .days {
+    display: flex;
+    align-items: center;
+}
+
+.days .d-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 5px 0 5px;
+}
+
+.days .selected {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.days .selected {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.days .d-wrapper .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 4px;
+    color: #4caf50;
+}
+
+.plan .box {
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 0 30px 0;
+}
+
+.plan .box .b-wrapper {
+    display: none;
+}
+
+.plan .box .selected {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .box .b-wrapper h2 {
+    margin: 40px 25px 20px 25px;
+    font-size: 30px;
+}
+
+.plan .box .b-wrapper p {
+    margin: 0 30px 0 40px;
+    font-size: 20px;
+}
+
+
+
+.h-wrapper .stockwerk {
+    margin: 0 40px;
+    color: #409443;
+}
+
+.h-wrapper .stockwerk h1 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.h-wrapper .floors {
+    display: flex;
+    align-items: center;
+}
+
+.floors .f-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 5px 0 5px;
+}
+
+.floors .selected {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.floors .f-wrapper .floor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 4px;
+    color: #4caf50;
+}
+
+.plan .box {
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 0 30px 0;
+}
+
+.plan .box .b-wrapper {
+    display: none;
+}
+
+.plan .box .selected {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .box .b-wrapper h2 {
+    margin: 40px 25px 20px 25px;
+    font-size: 30px;
+}
+
+.plan .box .b-wrapper p {
+    margin: 0 30px 0 40px;
+    font-size: 20px;
+}
+
+.body.darkmode .content .wrapper .plan {
+    color: #d3d3d3;
+    background-color: #2f2f2f;
+}
+
+.body.darkmode .content .wrapper .plan .box {
+    color: #d3d3d3;
+    background-color: #212121;
+}
+
+.body.darkmode .content .wrapper .plan .selected {
+    color: #d3d3d3;
+    background-color: #212121;
+}
+
+
+@media screen and (max-width: 940px) {
+    .content .wrapper .plan {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .h-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .plan .box {
+        border-radius: 15px 15px 25px 25px;
+    }
+
+    .h-wrapper .days .d-wrapper .day {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .plan .box .b-wrapper h2 {
+        margin: 40px 25px 20px 25px;
+        font-size: 25px;
+    }
+    
+    .plan .box .b-wrapper p {
+        margin: 0 30px 0 40px;
+        font-size: 14px;
+    }
+}

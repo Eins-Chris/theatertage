@@ -1,4 +1,4 @@
-html {
+ahtml {
     font-family: sans-serif;
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -23,6 +23,88 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(180deg, rgb(44, 120, 46) 0%, rgb(9, 83, 12) 99%);
 }
+
+
+.content {
+    margin: 50px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.content .wrapper .group {
+    width: 840px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.content .wrapper .group:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.content .wrapper .group h1 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.content .wrapper .group .list h2 {
+    margin: 40px 25px 10px 25px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.content .wrapper .group .list h3 {
+    margin: 26px 20px 8px 20px;
+    font-size: 20px;
+}
+
+.content .wrapper .group .divider {
+    height: 2px;
+    background-color: #4caf50;
+    margin: 10px;
+}
+
+.content .wrapper .group .list {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.content .wrapper .group .list p {
+    margin: 8px 30px 5px 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content .wrapper .group .list p a {
+    color: rgb(76, 76, 241);
+    text-decoration: none;
+}
+
+.content .wrapper .group .list .green {
+    color: #2dad13;
+}
+
+.content .wrapper .group .list ul {
+    margin: 8px 30px 5px 30px;
+    padding: 0 0 0 15px;
+}
+
+.content .wrapper .group .list ul li {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 .body {
     margin: 0;
@@ -54,13 +136,18 @@ html {
     background-color: #2f2f2f;
 }
 
+.body.darkmode .content .plan-wrapper .plan {
+    color: #d3d3d3;
+    background-color: #2f2f2f;
+}
+
 
 /*Pläne select button color change*/
-.body.darkmode .content .wrapper .group .header .days .selected {
+.body.darkmode .content .wrapper .group .h-wrapper .days .selected {
     color: #d3d3d3;
     background-color: #212121;
 }
-.body.darkmode .content .wrapper .group .header .floors .selected {
+.body.darkmode .content .wrapper .group .h-wrapper .floors .selected {
     color: #d3d3d3;
     background-color: #212121;
 }
@@ -388,6 +475,12 @@ html {
     .nav-sub-menu.show {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .content .wrapper .group {
+        width: 100%;
     }
 }
 
