@@ -1,27 +1,20 @@
 NÄCHSTE TODOS:
-    (7) Subsite Datenschutz schreiben (Hilfe vom Rest, Arbeitsaufteilung)
-    (4) Navbar Dropdowns - integrieren von Darkmode Button für Mobile
-    (5) Subsite Hauptseite schreiben
-    (7) Subsite Adminseite schreiben
-    (9) Subsite News Editor schreiben
-    (3) Mobile Textgröße/Bilderformat anpassen
+    (3) Bilder zu About einfügen
+    (4) Mobile Textgröße/Bilderformat anpassen
     (4) Pläne Grafiken erstellen
-    (7) Subsite Unterbringung überarbeiten
+    (5) Navbar Dropdowns - integrieren von Darkmode Button für Mobile
     (5) Unterstrich in Navbar unter aktueller Website
+    (6) Subsite Hauptseite schreiben
+    (7) Subsite Unterbringung überarbeiten
+    (7) Subsite Datenschutz schreiben (Hilfe vom Rest, Arbeitsaufteilung)
+    (7) Subsite Adminseite schreiben
     (8) Seiten Ladeanimation (vlt Vorhang, Text, Ladekreis, Logo Theatertage)
-    (4) Bilder zu About einfügen
-    (Lennart) About P-Seminare Text einfügen
+    (9) Subsite News Editor schreiben
     (Parlow) Info Text Theatertage Hauptseite schreiben
-    (im Team angefragt) Social Media Accounts
 
 Hauptseite
-    -> Theatertage. Was ist das? Text für Main Homepage anfragen!!!!!!
+    -> Theatertage. Was ist das? Text für Main Homepage anfragen!!!!!! (Parlow)
     -> Grußwort Herr Zenger integrieren (Weihnachten)
-
-
-Social Media Accounts
-    -> Wurden noch nicht gemacht, wird sich von irgendwem irgendwann gekümmert
-    -> Ich schlage vor die Accounts zu erstellen und die Administration an jmd zuständigen abzugeben
 
 
 Stand subsites:
@@ -31,7 +24,7 @@ Stand subsites:
     (in arbeit) Newsletter (Integration Posts aus Editor)
     (fertig) Pläne (Grafiken)
     (fertig) Teilnehmende (Teilnehmerliste erst später)
-    (fertig) AboutUs (Text Lennart)
+    (fertig) AboutUs (Bilder)
     (fertig) Impressum
     (in arbeit) Datenschutz (DSErklärung einholen, DS umschreiben)
     (in arbeit) Adminseite (Passwort(PHILIPP), News Editor)
