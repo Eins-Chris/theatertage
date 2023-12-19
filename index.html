@@ -5,14 +5,13 @@
     <title>Theatertage 2024</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="admin/styles/general.css" rel="stylesheet">
-    <link href="under-dev.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="admin/img/shortcut.ico" rel="shortcut icon" type="image/x-icon">
     <link href="admin/img/webicon.png" rel="apple-touch-icon">
     <script crossorigin='anonymous' src="https://code.jquery.com/jquery-3.7.0.js"></script> 
     <script>
         $(function() {
             $(".nav").load("admin/preset/main_nav.html");
-            $(".top").load("admin/preset/top.html");
             $(".footer").load("admin/preset/main_footer.html");
         })
     </script>
@@ -20,19 +19,58 @@
 
 <body class="body" id="body" onload="checkDarkmode()">
     <section class="nav"></section>
-    <section class="top"></section>
+    <section class="top">
+        <section class="placeholder"></section>
+        <section class="center">
+            <img src="admin/img/gruppenfoto.png" alt="">
+            <section class="countdown">
+                <div class="wrapper" id="cd">
+                    <div class="text">Verbleibende Zeit:</div>
+                    <div class="boxes">
+                        <div class="box">
+                            <div class="count" id="d">99</div>
+                            <p>Tage</p>
+                        </div>
+                        <div class="box">
+                            <div class="count" id="h">99</div>
+                            <p>Stunden</p>
+                        </div>
+                        <div class="box">
+                            <div class="count" id="m">99</div>
+                            <p>Minuten</p>
+                        </div>
+                        <div class="box">
+                            <div class="count" id="s">99</div>
+                            <p>Sekunden</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="dmtoggle" onclick="darkmode()">
+            <span class="switch"></span>
+        </section>
+    </section>
 
     <section class="content">
-        <h1>Dieser Teil der Website ist noch in Arbeit. Bitte gedulde dich noch ein wenig, die Fertigstellung wird nicht mehr lange auf sich warten lassen!</h1>
-        <div class="diashow group">
-            <div class="images">
-                <img src="admin/img/gruppenbild.png" alt="">
+        <!--Was sind Theatertage? Website Links im Text integriert-->
+        <div class="wrapper">
+            <div class="group">
+                <h1>Was sind Theatertage?</h1>
+                <div class="divider"></div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem atque assumenda dolor repellat vel laboriosam. Molestias assumenda sint doloremque tenetur beatae provident quas, commodi suscipit, nisi voluptate delectus sit voluptates accusamus quo iure ex voluptatem architecto sapiente excepturi, fuga doloribus! Ullam quae magni unde quisquam ex veniam, inventore maiores! Sunt sequi obcaecati autem fugiat harum laborum maiores eaque facilis voluptatem totam commodi aut delectus provident aspernatur adipisci est perferendis incidunt doloribus laudantium laboriosam tempora, non earum eius aperiam! Assumenda, delectus praesentium cum fugiat est minima autem, vero eos repudiandae nostrum dicta enim officia iure dolor aspernatur quas incidunt veniam deleniti! Esse est, quasi ex culpa reprehenderit fugit eaque doloremque nisi fugiat, sit, nam labore praesentium officiis corrupti quis! Laboriosam doloremque debitis ducimus reprehenderit exercitationem excepturi harum cupiditate quibusdam, facere, ipsa itaque illo quam incidunt ut eligendi natus soluta, odio dolore esse nulla? Tempora accusantium ea nulla debitis laudantium! Reprehenderit itaque eveniet hic ipsum et officiis, tempore minima soluta totam impedit veritatis voluptatibus. Tempora ullam adipisci facilis inventore deleniti fugit, provident odit eligendi! Doloremque, laboriosam error quaerat vero laudantium blanditiis voluptatum quasi veritatis, eum corrupti eligendi, reprehenderit cupiditate hic harum fugiat debitis tempore. Harum beatae voluptatum laborum. Facere voluptates doloribus exercitationem sed asperiores magnam quaerat minima? Quo debitis ipsam, aliquid porro nihil quasi voluptatem, dolores maxime voluptates quas amet non possimus odit architecto autem, alias exercitationem odio illo id repellat vero quaerat? Quam in quas assumenda eveniet consequuntur eius placeat illum, libero dignissimos est commodi veniam ipsum aut amet blanditiis! Assumenda, dolorem id qui perferendis, reprehenderit inventore quibusdam vero nemo obcaecati saepe nam, beatae quas molestiae quia sapiente error non fugiat distinctio corrupti pariatur consequuntur ad. Harum illo, ab possimus itaque quae reiciendis, quisquam placeat voluptatibus eaque dolores sed saepe illum veniam suscipit doloribus pariatur natus molestiae ducimus. Asperiores assumenda eligendi quibusdam aperiam eum ullam quae quo nemo porro blanditiis eius officiis, autem alias quod ad, consequuntur quaerat veritatis odit dolorem. Impedit dolore doloribus perferendis, ut tenetur possimus, quos repudiandae ullam commodi labore deserunt. Facilis, ex. Ipsum impedit sunt beatae eligendi, excepturi nostrum ut illo hic cumque aliquid fuga dolor, unde quibusdam adipisci necessitatibus optio facere, expedita voluptas libero error? Dolorum doloremque maiores eius commodi? Architecto facere expedita molestias suscipit omnis illum quo molestiae nesciunt soluta quia numquam quos voluptatibus dignissimos harum qui, distinctio modi id reprehenderit doloremque! Voluptates, ducimus. Sapiente iure eos, deserunt quibusdam minima maxime dolores quas sed ullam aspernatur, ad sunt! Sit cum adipisci reiciendis doloribus odio nobis quidem, ab reprehenderit quia quam commodi explicabo voluptas dicta molestiae vitae aliquam ea laboriosam, deserunt dolore architecto eius similique? Aperiam explicabo earum at nihil, dolorem doloremque nobis odit unde accusamus vitae, impedit quibusdam doloribus voluptatum inventore enim dolorum ea. Sint harum esse excepturi nam dolorum illo perspiciatis veritatis numquam consequuntur suscipit. Officiis, hic? Deleniti quaerat qui nesciunt exercitationem repellendus tempore quidem excepturi sapiente placeat consequuntur ad esse, assumenda impedit dolor amet facere sequi rem laudantium dolore distinctio! Corrupti illum, ex molestiae asperiores provident adipisci fugit hic quae dolorem. Necessitatibus.</p>
+                </div>
             </div>
-            <div class="control">
-                
+            <div class="gruss group">
+                <h1>Grußworte des Direktors Christian Zenger</h1>
+                <div class="divider"></div>
+                <div class="list">
+                    <div>BILD ZENGER</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus molestiae ex dolor commodi labore perferendis asperiores eveniet consequatur perspiciatis? Voluptates dolores repellat nulla sed in! At placeat consequatur tempora dolore aliquid odio expedita, quae sed saepe in deserunt error laboriosam est repudiandae ratione a, minus velit laborum asperiores culpa porro, pariatur nihil. Earum ipsa est deserunt eveniet natus vitae! Error repellat veniam voluptas voluptatum sequi reiciendis culpa consequuntur nulla aut itaque suscipit numquam, quo quas blanditiis rerum minus, ab hic doloribus beatae modi dolores quos magnam adipisci? Asperiores, ducimus! Sunt minima temporibus fuga nulla dolorum obcaecati odio vero nemo exercitationem assumenda! Omnis, perferendis ratione? Molestias quibusdam, quam architecto ea veniam ad eius! Autem sapiente velit iure unde! Exercitationem, illum!</p>
+                </div>
             </div>
         </div>
-        <!--Was sind Theatertage? Website Links im Text integriert-->
 
         <!--
         <div class="zenger group">
