@@ -212,6 +212,25 @@ html {
     margin: 0 5px;
     padding: 10px 10px;
     text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+      #4caf50,
+      #4caf50
+    ),
+    linear-gradient(
+      to right,
+      #2e3036,
+      #2e3036
+    );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.nav-link:hover {
+    background-size: 0 2px, 100% 2px;
 }
 
 .nav-dropdown {
