@@ -73,6 +73,7 @@ html {
     margin: 40px 25px 10px 25px;
     font-size: 25px;
     line-height: 25px;
+    text-align: initial;
 }
 
 .content .wrapper .group .list h3 {
