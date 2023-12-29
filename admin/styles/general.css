@@ -58,6 +58,17 @@ html {
     line-height: 26px;
 }
 
+.content .wrapper .group .list {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.content .wrapper .group .list p {
+    margin: 8px 30px 5px 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .content .wrapper .group .list h2 {
     margin: 40px 25px 10px 25px;
     font-size: 25px;
@@ -74,21 +85,16 @@ html {
     font-size: 20px;
 }
 
+.content .wrapper .group .list img {
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 5px;
+}
+
 .content .wrapper .group .divider {
     height: 2px;
     background-color: #4caf50;
     margin: 10px;
-}
-
-.content .wrapper .group .list {
-    padding-bottom: 20px;
-    text-align: justify;
-}
-
-.content .wrapper .group .list p {
-    margin: 8px 30px 5px 30px;
-    font-size: 16px;
-    line-height: 24px;
 }
 
 .content .wrapper .group .list p a {
@@ -509,23 +515,19 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    /*
-        FOOTER LOGO ÜBER GRID (DONE)
-    */
-
     .footer-info {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 690px) {
-    /*
-        NAVBAR -> DROPDOWN ZWISCHEN LOGO UND GMG BUTTON (DONE)
-    */
-
+    .content .wrapper {
+        margin: 0 20px;
+    }
     
     .nav-link {
         display: none;
+        background: none;
     }
 
     .nav-elements {
@@ -571,6 +573,57 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+    .content .wrapper {
+        margin: 0 5px;
+    }
+
+    .content .wrapper .group h1 {
+        margin: 15px 0;
+        font-size: 24px;
+        line-height: 18px;
+    }
+
+    .content .wrapper .group .list {
+        padding-bottom: 10px;
+    }
+
+    .content .wrapper .group .list p {
+        margin: 8px 24px 5px 24px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .content .wrapper .group .list h2 {
+        margin: 30px 20px 10px 20px;
+        font-size: 18px;
+        line-height: 16px;
+    }
+
+    .content .wrapper .group .list h3 {
+        margin: 26px 20px 8px 20px;
+        font-size: 16px;
+    }
+
+    .content .wrapper .group .list ul {
+        margin: 8px 24px 5px 24px;
+        padding: 0 0 0 15px;
+    }
+
+    .content .wrapper .group .list .sub {
+        margin: 8px 8px 5px 8px;
+        padding: 0 0 0 15px;
+    }
+    
+    .content .wrapper .group .list ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .content .wrapper .group .list ul li h3 {
+        margin: 8px 0 4px 0;
+        font-size: 16px;
+    }
+
     /*
         NAVBAR -> NAV_LOGO_LONG (DONE) + DROPDOWN (DONE)
     */
@@ -605,14 +658,58 @@ html {
         cursor: pointer;
     }
 
-
-    /*
-        FOOTER GRID AUFTEILUNG UNTEREINANDER (DONE)
-    */
-
     .footer-blocks {
         flex-direction: column;
         gap: 40px;
         margin: 30px 0;
+    }
+
+    @media screen and (max-width: 380px) {
+        .content .wrapper .group h1 {
+            margin: 15px 0;
+            font-size: 20px;
+            line-height: 14px;
+        }
+    
+        .content .wrapper .group .list {
+            padding-bottom: 6px;
+        }
+    
+        .content .wrapper .group .list p {
+            margin: 6px 20px 5px 20px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    
+        .content .wrapper .group .list h2 {
+            margin: 30px 16px 10px 16px;
+            font-size: 16px;
+            line-height: 14px;
+        }
+    
+        .content .wrapper .group .list h3 {
+            margin: 22px 20px 8px 20px;
+            font-size: 14px;
+        }
+    
+        .content .wrapper .group .list ul {
+            margin: 8px 20px 5px 20px;
+            padding: 0 0 0 15px;
+        }
+    
+        .content .wrapper .group .list .sub {
+            margin: 8px 0 5px 0;
+            padding: 0 0 0 15px;
+        }
+        
+        .content .wrapper .group .list ul li {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    
+        .content .wrapper .group .list ul li h3 {
+            margin: 8px 0 4px 0;
+            font-size: 14px;
+        }
     }
 }
