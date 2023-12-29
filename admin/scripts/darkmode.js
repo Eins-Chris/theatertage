@@ -20,17 +20,11 @@ function initialize() {
 }
 
 function toggle() {
-    console.log('1.1' + tog);
     if (tog == 1) {
         tog = 0;
-        console.log('set to 0');
     } else if (tog == 0) {
         tog = 1;
-        console.log('set to 1');
-    } else {
-        console.log('ERROR MAN WAS IS DENN JETZ LOS?!?!');
     }
-    console.log('1.2' + tog);
     localStorage.setItem('darkmode', tog);
 }
 
