@@ -16,6 +16,9 @@
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .plan:hover {
@@ -37,7 +40,28 @@
 }
 
 .plan .preview {
-    height: 200px;
+    position: relative;
+    top: -8%;
+}
+
+.plan .preview h1 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.plan .preview h2 {
+    font-size: 12px;
+    margin: 0px 26px;
+}
+
+.plan .preview p {
+    font-size: 8px;
+    margin: 0 34px;
+}
+
+.plan .preview img {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .plan.left {
@@ -46,6 +70,26 @@
 
 .plan.right {
     margin-left: 20px;
+}
+
+.plan.right .preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .more {
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.plan .more p {
+    margin: 0;
+    padding: 8px 24px;
+    background-color: #4caf50;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 640px) {
