@@ -17,11 +17,28 @@
 .gemeinden .list a img {
 	margin: 10px 9px 10px 9px;
 	height: 100px;
+
+	@media (max-width: 700px) {
+		height: 85px;
+	}
+	@media (max-width: 450px) {
+		height: 75px;
+	}
 }
 
 .firmen .sponsor a img {
 	margin: 0 9px 5px 9px;
 	height: 70px;
+
+	@media screen and (max-width: 600px) {
+		height: 60px;
+	}
+	@media screen and (max-width: 500px) {
+		height: 50px;
+	}
+	@media screen and (max-width: 400px) {
+		height: 40px;
+	}
 }
 
 .firmen .sponsor a .rounded {
@@ -59,30 +76,19 @@
 	border-radius: 5px;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 500;
+	
+	@media (max-width: 800px) {
+		font-size: 19px;
+	}
+	@media (max-width: 650px) {
+		font-size: 18px;
+	}
+	@media (max-width: 500px) {
+		font-size: 16px;
+		padding: 3px 8px;
+	}
 }
 
 .private:hover .list .loop {
 	animation-play-state: paused;
-}
-
-@media screen and (max-width: 516px) {
-	.firmen .sponsor a img {
-		height: 60px;
-	}
-}
-
-@media screen and (max-width: 420px) {
-	.firmen .sponsor a img {
-		height: 50px;
-	}
-}
-
-@media screen and (max-width: 378px) {
-	.gemeinden .list img {
-		height: 80px;
-	}
-
-	.firmen .sponsor a img {
-		height: 40px;
-	}
 }
