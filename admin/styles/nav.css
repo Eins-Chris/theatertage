@@ -219,13 +219,13 @@
 }
 
 .nav-wrapper .right {
-	display: inline-grid;
-	grid-template-columns: auto auto auto;
+	display: inline-flex;
+	/* grid-template-columns: auto auto auto; */
 	align-items: center;
 	gap: 15px;
 
 	@media (max-width: 400px) {
-		grid-template-columns: auto;
+		/* grid-template-columns: auto; */
 	}
 }
 

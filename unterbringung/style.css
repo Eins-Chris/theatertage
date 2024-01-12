@@ -4,13 +4,6 @@
     align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
-}   
-
-.footer-divider {
-    width: 80%;
-    margin: 5px auto;
-    height: 1px;
-    background-color: #e4ebf3;
 }
 
 .content .wrapper {
