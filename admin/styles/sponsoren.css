@@ -1,78 +1,88 @@
 .group .list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow: hidden;
+	gap: 5px;
+}
+
+.group .list a img {
+	transition: transform .25s ease;
+}
+
+.group .list a:hover img {
+	transform: scale(1.05);
 }
 
 .gemeinden .list a img {
-    margin: 0 9px 10px 9px;
-    height: 130px;
+	margin: 10px 9px 10px 9px;
+	height: 100px;
 }
 
 .firmen .sponsor a img {
-    margin: 0 9px 5px 9px;
-    height: 78px;
+	margin: 0 9px 5px 9px;
+	height: 70px;
 }
 
 .firmen .sponsor a .rounded {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .firmen .sponsor a h2 {
-    display: none;
+	display: none;
 }
 
 @keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 
 .private .list {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin: 20px 0;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 }
 
 .private .list .loop {
-    display: flex;
-    animation: 30s slide infinite linear;
+	display: flex;
+	animation: 30s slide infinite linear;
 }
 
 .private .list .loop .private {
-    background-color: #3333;
-    font-size: 24px;
-    padding: 5px 10px;
-    margin: 7px;
-    border-radius: 5px;
+	background-color: #3333;
+	font-size: 21px;
+	padding: 5px 12px;
+	margin: 7px;
+	border-radius: 5px;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
 }
 
 .private:hover .list .loop {
-    animation-play-state: paused;
+	animation-play-state: paused;
 }
 
 @media screen and (max-width: 516px) {
-    .firmen .sponsor a img {
-        height: 60px;
-    }
+	.firmen .sponsor a img {
+		height: 60px;
+	}
 }
 
 @media screen and (max-width: 420px) {
-    .firmen .sponsor a img {
-        height: 50px;
-    }
+	.firmen .sponsor a img {
+		height: 50px;
+	}
 }
 
 @media screen and (max-width: 378px) {
-    .gemeinden .list img {
-        height: 80px;
-    }
+	.gemeinden .list img {
+		height: 80px;
+	}
 
-    .firmen .sponsor a img {
-        height: 40px;
-    }
+	.firmen .sponsor a img {
+		height: 40px;
+	}
 }
