@@ -22,5 +22,11 @@ dropdownOpen.onclick = dropdownHandler;
 document.onclick = dropdownCloseHandler;
 
 $(window).scroll(function () {
-  navTarget.classList.toggle("scrolled", $(this).scrollTop() > 50);
+  // navTarget.classList.toggle("scrolled", $(this).scrollTop() > 50);
+  const scroll = $(this).scrollTop();
+  if (scroll > 50) {
+    navTarget.classList.add("scrolled");
+  } else if (scroll < 5) {
+    navTarget.classList.remove("scrolled");
+  }
 });
