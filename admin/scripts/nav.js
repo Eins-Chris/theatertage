@@ -20,3 +20,7 @@ navOpen.onclick = navHandler;
 navClose.onclick = navHandler;
 dropdownOpen.onclick = dropdownHandler;
 document.onclick = dropdownCloseHandler;
+
+$(window).scroll(function () {
+  navTarget.classList.toggle("scrolled", $(this).scrollTop() > 50);
+});

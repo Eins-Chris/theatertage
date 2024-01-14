@@ -1,3 +1,9 @@
+.nav {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
 .nav-wrapper {
 	position: relative;
 	display: flex;
@@ -8,6 +14,8 @@
 	gap: 50px;
 	box-shadow: rgba(0, 0, 0, .15) 10px 10px 10px;
 
+	transition: background .2s ease, padding .2s ease;
+
 	@media (max-width: 1100px) {
 		gap: 30px;
 	}
@@ -15,6 +23,33 @@
 		justify-content: space-between;
 	}
 }
+
+.nav-wrapper.scrolled:not(.fullscreen) { /* backdrop-filter causes problems for some unknown reason */
+	backdrop-filter: blur(8px);
+	background: rgba(76, 175, 80, 0.75);
+}
+
+.nav-wrapper.scrolled.fullscreen {
+	transition: background .2s cubic-bezier(0, .66, .38, 1);
+}
+
+.nav:has(.fullscreen) {
+	position: fixed;
+	width: 100%;
+}
+
+body:has(.nav > .nav-wrapper.scrolled.fullscreen) {
+	padding-top: 56px;
+}
+body:has(.nav > .nav-wrapper.fullscreen) {
+	padding-top: 66px;
+}
+
+.nav-wrapper.scrolled {
+	padding: 10px 20px;
+}
+
+
 
 .nav-wrapper .items {
 	display: flex;
@@ -92,6 +127,7 @@
 		transform: translateY(-10px);
 	}
 }
+
 @keyframes nav-full-in {
 	from {
 		transform: scaleY(0);
@@ -180,6 +216,11 @@
 	border-radius: 5px;
 	cursor: pointer;
 	user-select: none;
+	transition: scale .2s ease;
+}
+
+.nav-wrapper.scrolled .logo {
+	scale: .95;
 }
 
 .nav-wrapper .logo img {
@@ -196,7 +237,7 @@
 	font-family: sans-serif;
 	font-size: 12px;
 	letter-spacing: .2em;
-	padding: 12px 25px;
+	padding: 10px 22px;
 	color: white;
 	background: #6caf50;
 	text-transform: uppercase;
@@ -207,7 +248,7 @@
 
 	@media (max-width: 1100px) {
 		font-size: 11px;
-		padding: 10px 15px;
+		padding: 8px 15px;
 	}
 	@media (max-width: 400px) {
 		display: none;
@@ -234,6 +275,7 @@
 	width: auto;
 	transition: transform .3s ease;
 }
+
 .nav-wrapper.dropdown .expand-dropdown img {
 	transform: rotate(-180deg);
 }
@@ -253,6 +295,7 @@
 		display: flex;
 	}
 }
+
 .nav-wrapper .expand {
 	order: 1;
 	display: none;
