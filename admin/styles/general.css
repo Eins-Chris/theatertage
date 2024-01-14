@@ -104,7 +104,8 @@ a {
 	/*margin-top: -5px;*/
 }
 
-.content .wrapper .group .list p {
+.content .wrapper .group .list p,
+.content .wrapper .group .list li {
 	font-family: "Open Sans", sans-serif;
     margin: 8px 0 5px 0;
     font-size: 16px;
@@ -154,7 +155,7 @@ a {
 }
 
 .content .wrapper .group .list ul {
-    margin: 8px 15px 5px 15px;
+    /*margin: 8px 15px 5px 15px;*/
     padding: 0 0 0 15px;
 }
 
@@ -488,7 +489,7 @@ a {
     }
 
     .content .wrapper .group h1 {
-        margin: 15px 0;
+        /*margin: 15px 0;*/
         font-size: 24px;
         line-height: 18px;
     }
@@ -498,29 +499,29 @@ a {
     }
 
     .content .wrapper .group .list p {
-        margin: 8px 24px 5px 24px;
+        /*margin: 8px 24px 5px 24px;*/
         font-size: 14px;
         line-height: 22px;
     }
 
     .content .wrapper .group .list h2 {
-        margin: 30px 20px 10px 20px;
+        /*margin: 30px 20px 10px 20px;*/
         font-size: 18px;
         line-height: 16px;
     }
 
     .content .wrapper .group .list h3 {
-        margin: 26px 20px 8px 20px;
+        /*margin: 26px 20px 8px 20px;*/
         font-size: 16px;
     }
 
     .content .wrapper .group .list ul {
-        margin: 8px 24px 5px 24px;
+        /*margin: 8px 24px 5px 24px;*/
         padding: 0 0 0 15px;
     }
 
     .content .wrapper .group .list .sub {
-        margin: 8px 8px 5px 8px;
+        /*margin: 8px 8px 5px 8px;*/
         padding: 0 0 0 15px;
     }
 
@@ -530,7 +531,7 @@ a {
     }
 
     .content .wrapper .group .list ul li h3 {
-        margin: 8px 0 4px 0;
+        /*margin: 8px 0 4px 0;*/
         font-size: 16px;
     }
 
@@ -546,7 +547,7 @@ a {
 
     @media screen and (max-width: 380px) {
         .content .wrapper .group h1 {
-            margin: 15px 0;
+            /*margin: 15px 0;*/
             font-size: 20px;
             line-height: 14px;
         }
@@ -556,29 +557,29 @@ a {
         }
 
         .content .wrapper .group .list p {
-            margin: 6px 20px 5px 20px;
+            /*margin: 6px 20px 5px 20px;*/
             font-size: 12px;
             line-height: 18px;
         }
 
         .content .wrapper .group .list h2 {
-            margin: 30px 16px 10px 16px;
+            /*margin: 30px 16px 10px 16px;*/
             font-size: 16px;
             line-height: 14px;
         }
 
         .content .wrapper .group .list h3 {
-            margin: 22px 20px 8px 20px;
+            /*margin: 22px 20px 8px 20px;*/
             font-size: 14px;
         }
 
         .content .wrapper .group .list ul {
-            margin: 8px 20px 5px 20px;
+            /*margin: 8px 20px 5px 20px;*/
             padding: 0 0 0 15px;
         }
 
         .content .wrapper .group .list .sub {
-            margin: 8px 0 5px 0;
+            /*margin: 8px 0 5px 0;*/
             padding: 0 0 0 15px;
         }
 
