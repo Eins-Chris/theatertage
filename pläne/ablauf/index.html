@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>Theatertage - Ablaufplan</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="../../admin/styles/general.css" rel="stylesheet">
-    <link href="../../admin/styles/sub_pläne.css" rel="stylesheet">
-    <link href="../../admin/img/shortcut.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="../../admin/img/webicon.png" rel="apple-touch-icon">
+    <link href="/admin/styles/general.css" rel="stylesheet">
+    <link href="/admin/styles/nav.css" rel="stylesheet">
+    <link href="/admin/styles/footer.css" rel="stylesheet">
+    <link href="/admin/styles/sub_pläne.css" rel="stylesheet">
+    <link href="/admin/img/shortcut.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/admin/img/webicon.png" rel="apple-touch-icon">
     <script crossorigin='anonymous' src="https://code.jquery.com/jquery-3.7.0.js"></script> 
     <script>
         $(function() {
-            $(".nav").load("../../admin/preset/sub_nav.html");
-            $(".top").load("../../admin/preset/top.html");
-            $(".footer").load("../../admin/preset/sub_footer.html");
+            $(".nav").load("/admin/preset/nav.html");
+            $(".top").load("/admin/preset/top.html");
+            $(".footer").load("/admin/preset/footer.html");
         })
     </script>
 </head>
@@ -119,8 +121,6 @@
     </section>
 
     <section class="footer"></section>
-    <script src="../../admin/scripts/general.js"></script>
-    <script src="../../admin/scripts/countdown.js"></script>
-    <script src="../../admin/scripts/darkmode.js"></script>
-    <script src="../../admin/scripts/pläne/ablauf.js"></script>
+    <script src="/admin/scripts/countdown.js"></script>
+    <script src="/admin/scripts/pläne/ablauf.js"></script>
 </body>
