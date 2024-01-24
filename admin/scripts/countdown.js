@@ -2,13 +2,13 @@ var countDownDate = new Date("Jul 17, 2024 14:00:00").getTime();
 
 function updateCountdown() {
 
-  // Making the count down visible
+  // Making the countdown visible
   document.getElementById("cd").style= "";
 
   // Get today's date and time
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // Find the distance between now and the countdown date
   var distance = countDownDate - now;
 
   if (distance < 0) distance = 0;
@@ -33,5 +33,4 @@ function updateCountdown() {
 }
 
 // Update the countdown every 1 second
-var x = setInterval(updateCountdown, 1000);
-updateCountdown();
+var x = setInterval(updateCountdown, 1000,);
