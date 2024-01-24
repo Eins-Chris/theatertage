@@ -10,8 +10,6 @@ async function createNewsOverview() {
 const newsContainer = document.getElementById("news");
 
 function createNewsOverviewFor(post) {
-  console.log(post)
-
   // create element & load preset
   const element = $("<div>");
   const jqElement = $(element);
