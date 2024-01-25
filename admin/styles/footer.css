@@ -39,22 +39,6 @@
 
 
 	transition: scale .2s ease, filter .2s ease;
-
-	@media (max-width: 900px) {
-        max-width: 150px;
-		max-height: 150px;
-    }
-	@media (max-width: 800px) {
-		max-width: 125px;
-		max-height: 125px;
-	}
-	@media (max-width: 650px) {
-		max-width: 110px;
-		max-height: 110px;
-	}
-	@media (max-width: 550px) {
-		display: none;
-    }
 }
 
 .footer .footer-logo:hover {
@@ -69,30 +53,12 @@
 	font-family: "Open Sans", sans-serif;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	@media (max-width: 800px) {
-		margin-top: 35px;
-		font-size: 13px;
-	}
-	@media (max-width: 650px) {
-		margin-top: 20px;
-	}
-	@media (max-width: 500px) {
-		margin-top: 0;
-	}
-	@media (max-width: 400px) {
-		padding: 0 20px;
-	}
 }
 
 .footer .footer-blocks .footer-block {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-
-	@media (max-width: 750px) {
-		gap: 5px;
-	}
 }
 
 .footer .footer-blocks .footer-block .title {
@@ -105,10 +71,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-
-	@media (max-width: 750px) {
-		gap: 1px;
-	}
 
 }
 
@@ -132,4 +94,62 @@
 	text-align: center;
 	font-weight: 500;
 	font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+	.footer .footer-logo {
+		max-width: 150px;
+		max-height: 150px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer .footer-logo {
+		max-width: 125px;
+		max-height: 125px;
+	}
+
+	.footer .footer-blocks {
+		margin-top: 35px;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.footer .footer-blocks .footer-block {
+		gap: 5px;
+	}
+
+	.footer .footer-blocks .footer-block .links {
+		gap: 1px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.footer .footer-logo {
+		max-width: 110px;
+		max-height: 110px;
+	}
+
+	.footer .footer-blocks {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.footer .footer-logo {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.footer .footer-blocks {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer .footer-blocks {
+		padding: 0 20px;
+	}
 }

@@ -26,16 +26,6 @@
 	height: 100px;
 	width: auto;
 	margin: auto;
-
-	@media (max-width: 800px) {
-		height: 90px;
-	}
-	@media (max-width: 700px) {
-		height: 85px;
-	}
-	@media (max-width: 450px) {
-		height: 75px;
-	}
 }
 
 .content .wrapper .group.gemeinden .list a p {
@@ -44,31 +34,11 @@
 	font-weight: 400;
 	text-align: center;
 	font-size: 16px;
-
-	@media (max-width: 800px) {
-		font-size: 15px;
-	}
-	@media (max-width: 700px) {
-		font-size: 14px;
-	}
-	@media (max-width: 600px) {
-		font-size: 13px;
-	}
 }
 
 .firmen .sponsor a img {
 	margin: 0 9px 5px 9px;
 	height: 70px;
-
-	@media screen and (max-width: 800px) {
-		height: 60px;
-	}
-	@media screen and (max-width: 600px) {
-		height: 50px;
-	}
-	@media screen and (max-width: 400px) {
-		height: 40px;
-	}
 }
 
 .firmen .sponsor a .rounded {
@@ -106,19 +76,71 @@
 	border-radius: 5px;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 500;
+}
 
-	@media (max-width: 800px) {
+.private:hover .list .loop {
+	animation-play-state: paused;
+}
+
+@media screen and (max-width: 800px) {
+	.content .wrapper .group.gemeinden .list a img {
+		height: 90px;
+	}
+
+	.content .wrapper .group.gemeinden .list a p {
+		font-size: 15px;
+	}
+
+	.firmen .sponsor a img {
+		height: 60px;
+	}
+
+	.private .list .loop .private {
 		font-size: 19px;
 	}
-	@media (max-width: 650px) {
+}
+
+@media screen and (max-width: 700px) {
+	.content .wrapper .group.gemeinden .list a img {
+		height: 85px;
+	}
+
+	.content .wrapper .group.gemeinden .list a p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.private .list .loop .private {
 		font-size: 18px;
 	}
-	@media (max-width: 500px) {
+}
+
+@media screen and (max-width: 600px) {
+	.content .wrapper .group.gemeinden .list a p {
+		font-size: 13px;
+	}
+
+	.firmen .sponsor a img {
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.private .list .loop .private {
 		font-size: 16px;
 		padding: 3px 8px;
 	}
 }
 
-.private:hover .list .loop {
-	animation-play-state: paused;
+@media screen and (max-width: 450px) {
+	.content .wrapper .group.gemeinden .list a img {
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.firmen .sponsor a img {
+		height: 40px;
+	}
 }

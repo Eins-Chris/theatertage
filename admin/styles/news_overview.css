@@ -8,10 +8,6 @@
 	background: white;
 	border-radius: 8px;
 	box-sizing: border-box;
-
-	@media (max-width: 1000px) {
-		width: 90%;
-	}
 }
 
 .news .entry .title {
@@ -23,4 +19,10 @@
 	font-size: 14px;
 	font-family: "Poppins", sans-serif;
 	color: #747474;
+}
+
+@media (max-width: 1000px) {
+	.news .entry {
+		width: 90%;
+	}
 }
