@@ -19,7 +19,7 @@ function createNewsOverviewFor(index, post) {
     entry.find(".title").text(post[NewsRow.Headline])
     entry.find(".date").text(dateFormat.format(post[NewsRow.Date]))
     entry.find(".summary").text(post[NewsRow.Summary])
-    entry.attr("href", `./post?id=${index}`)
+    entry.attr("href", `./post?ID=${index}`)
     
     $(newsContainer).append(entry);
   })
