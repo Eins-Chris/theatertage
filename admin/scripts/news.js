@@ -29,7 +29,7 @@ const NewsRow = {
   Author2: 15,
   Author3: 16,
   Author4: 17,
-  Author5: 18, // author of summary text
+  Author5: 18,
   Summary: 19, // 19.. every row as a new paragraph
 }
 

@@ -14,8 +14,21 @@ async function createNewsPost() {
 
 function setNewsPostFor(post) {
   //setting title
-  var title = "Theatertage - News: " + post[NewsRow.Headline];
-  document.getElementById('title').innerHTML = title;
+  document.getElementById('title').innerHTML = "Theatertage - News: " + post[NewsRow.Headline];
+
+  //insert blogpost contents
+  document.getElementById('headline').innerHTML = post[NewsRow.Headline];
+  document.getElementById('date').innerHTML = dateFormat.format(post[NewsRow.Date]);
+  //image
+  for (let i = 1; i <= 4; i++) {
+    var img = document.getElementById('img'+i);
+    img.src = "img/" + ID + "/" + post[NewsRow[`Img${i}`]];
+    document.getElementById('head'+i).innerHTML = post[NewsRow[`Head${i}`]];
+    document.getElementById('text'+i).innerHTML = post[NewsRow[`Text${i}`]];
+    document.getElementById('author'+i).innerHTML = "~" + post[NewsRow[`Author${i}`]];
+  }
+  document.getElementById('summary').innerHTML = post[NewsRow.Summary];
+  document.getElementById('author5').innerHTML = "~" + post[NewsRow.Author5];
 }
 
 createNewsPost().then(undefined);
