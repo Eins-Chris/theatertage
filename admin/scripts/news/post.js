@@ -4,9 +4,10 @@ async function createNewsPost() {
   const data = await readFile();
 
   //prevent error with to high low ID values in url
-  if (ID <= 1) { document.getElementById('btn_back').remove(); ID = 1;}
-  if (ID >= data.length-1) { document.getElementById('btn_next').remove(); ID = data.length-1;}
-  //setting url to new ID bcs it may have changed
+  if (ID < 1 ) { ID = 1; siteReload(); }
+  if (ID == 1) { document.getElementById('btn_back').remove(); }
+  if (ID == data.length-1) { document.getElementById('btn_next').remove(); }
+  if (ID > data.length-1) { ID = data.length-1; siteReload(); }
 
   setNewsPostFor(data[ID]);
 }
@@ -19,11 +20,19 @@ function setNewsPostFor(post) {
 
 createNewsPost().then(undefined);
 
+const urlpreset = "/news/post" + "?ID=";
+
+function siteReload() {
+  //setting url to new ID when changed
+  window.location.href = urlpreset + ID;
+}
 
 function btn_back() {
-  window.location.href = formatURL("?ID=" + ID - 1);
+  var newID = +ID - 1;
+  window.location.href = urlpreset + newID;
 }
 
 function btn_next() {
-  window.location.href = formatURL("?ID=" + ID + 1);
+  var newID = +ID + 1;
+  window.location.href = urlpreset + newID;
 }
