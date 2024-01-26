@@ -2,15 +2,12 @@
     margin: 50px 0;
 }
 
-.wrapper {
+.wrapper .buttons {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    margin: 0 50px;
+    justify-content: space-between;
 }
 
-.wrapper .button {
+.button {
     color: #1a1b1f;
     letter-spacing: 1px;
     line-height: inherit;
@@ -28,6 +25,10 @@
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
+.navigation .button {
+    margin: 0 15px 0 0;
+}
+
 .wrapper .button:hover {
     background-color: #7fcd5d;
 }
@@ -38,12 +39,6 @@
     background-color: #8cde69;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.divider {
-    /*height: 2px;*/
-    /*background-color: #4caf50;*/
-    /*margin: 10px;*/
 }
 
 .headline h1 {
@@ -120,5 +115,43 @@
 @media screen and (max-width: 940px) {
     .blogpost {
         width: 100%;
+    }
+
+    .content .wrapper .blogpost {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .button {
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        padding: 4px 8px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .button {
+        padding: 3px 6px;
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .button {
+        padding: 2px 4px;
+        font-size: 7px;
     }
 }

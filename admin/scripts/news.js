@@ -30,6 +30,7 @@ const NewsRow = {
   Author3: 16,
   Author4: 17,
   Summary: 18,
+  Author5: 19,
 }
 
 const dateFormat = Intl.DateTimeFormat("de-DE", {
