@@ -29,8 +29,8 @@ const NewsRow = {
   Author2: 15,
   Author3: 16,
   Author4: 17,
-  Summary: 18,
-  Author5: 19,
+  Author5: 18, // author of summary text
+  Summary: 19, // 19.. every row as a new paragraph
 }
 
 const dateFormat = Intl.DateTimeFormat("de-DE", {
