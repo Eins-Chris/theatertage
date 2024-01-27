@@ -30,7 +30,7 @@ const NewsRow = {
   Author3: 16,
   Author4: 17,
   Author5: 18,
-  Summary: 19, // 19.. every row as a new paragraph
+  Summary: 19,
 }
 
 const dateFormat = Intl.DateTimeFormat("de-DE", {
@@ -39,3 +39,13 @@ const dateFormat = Intl.DateTimeFormat("de-DE", {
   day: "numeric",
   weekday: "short"
 })
+
+function getSummary(data) {
+  // using NewsRow 19... as paragraphs for summary text
+  var result = "";
+  for (let i = NewsRow.Summary; i < data.length; i++) {
+    result += data[i];
+    result += "<br>";
+  }
+  return result;
+}

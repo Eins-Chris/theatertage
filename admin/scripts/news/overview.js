@@ -1,6 +1,8 @@
 async function createNewsOverview() {
   const data = await readFile();
 
+  console.log(data);
+
   // skip first row (titles/names)
   for (let i = 1; i < data.length; i++) {
     createNewsOverviewFor(i, data[i]);
@@ -18,7 +20,7 @@ function createNewsOverviewFor(index, post) {
 
     entry.find(".title").text(post[NewsRow.Headline])
     entry.find(".date").text(dateFormat.format(post[NewsRow.Date]))
-    entry.find(".summary").text(post[NewsRow.Summary])
+    entry.find(".summary").text(getSummary(post))
     entry.attr("href", `./post?ID=${index}`)
     
     $(newsContainer).append(entry);

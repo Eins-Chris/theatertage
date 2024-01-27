@@ -27,7 +27,7 @@ function setNewsPostFor(post) {
     document.getElementById('text'+i).innerHTML = post[NewsRow[`Text${i}`]];
     document.getElementById('author'+i).innerHTML = "~" + post[NewsRow[`Author${i}`]];
   }
-  document.getElementById('summary').innerHTML = post[NewsRow.Summary];
+  document.getElementById('summary').innerHTML = getSummary(post);
   document.getElementById('author5').innerHTML = "~" + post[NewsRow.Author5];
 }
 
