@@ -42,10 +42,12 @@ const dateFormat = Intl.DateTimeFormat("de-DE", {
 
 function getSummary(data) {
   // using NewsRow 19... as paragraphs for summary text
-  var result = "";
-  for (let i = NewsRow.Summary; i < data.length; i++) {
-    result += data[i];
-    result += "<br>";
+  var result = data[NewsRow.Summary];
+  for (let i = NewsRow.Summary + 1; i < data.length; i++) {
+    if (data[i] != null) {
+      result += "<br>";
+      result += data[i];
+    }
   }
   return result;
 }
