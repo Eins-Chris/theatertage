@@ -1,0 +1,44 @@
+.slider {
+    width: 100%;
+    display: flex;
+}
+
+.slider .img-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 8px;
+}
+
+.slider .img-list::-webkit-scrollbar {
+    height: 5px;
+}
+
+.content .wrapper .group .list img {
+    height: 200px;
+    width: auto;
+    margin: 4px 0;
+    border-radius: 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns .btn {
+    color: #1a1b1f;
+    letter-spacing: 1px;
+    line-height: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #6CAF50;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: all 0.2s;
+    margin: 15px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
