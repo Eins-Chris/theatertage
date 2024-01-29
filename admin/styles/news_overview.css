@@ -1,28 +1,34 @@
-
+/*
 .news {
 	display: flex;
 }
 
-.news .entry {
+.news .group {
 	padding: 15px 50px;
 	background: white;
 	border-radius: 8px;
 	box-sizing: border-box;
 }
 
-.news .entry .title {
+.news .group .title {
 	font-size: 20px;
 	font-family: "Poppins", sans-serif;
 }
 
-.news .entry .date {
+.news .group .date {
 	font-size: 14px;
 	font-family: "Poppins", sans-serif;
 	color: #747474;
 }
 
 @media (max-width: 1000px) {
-	.news .entry {
+	.news .group {
 		width: 90%;
 	}
+}*/
+
+.date {
+    width: 100%;
+    text-align:end;
+	color: #747474;
 }

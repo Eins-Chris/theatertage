@@ -169,6 +169,31 @@ h3 {
 
 
 
+.slider {
+    width: 100%;
+    display: flex;
+}
+
+.slider .img-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 8px;
+    margin: 12px 0 0 0;
+}
+
+.slider .img-list::-webkit-scrollbar {
+    height: 5px;
+}
+
+.content .wrapper .group .list img {
+    height: 200px;
+    width: auto;
+    margin: 4px 0;
+    border-radius: 0;
+}
+
+
+
 
 
 .body {
