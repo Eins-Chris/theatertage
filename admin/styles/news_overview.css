@@ -41,16 +41,17 @@
 }
 
 .more {
-	background-color: #8cde69;
+	background-color: #dddddd;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 	margin: 0 15px;
-	height: 55px;
+	height: 60px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.content .wrapper .group .list p {
+.more p {
     font-size: 22px;
     line-height: 26px;
 	margin: 4px 0;
