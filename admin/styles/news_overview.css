@@ -32,3 +32,46 @@
     text-align:end;
 	color: #747474;
 }
+
+.summary {
+    margin: 30px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.more {
+	background-color: #8cde69;
+	margin: 0 15px;
+	height: 55px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content .wrapper .group .list p {
+    font-size: 22px;
+    line-height: 26px;
+	margin: 4px 0;
+}
+
+.more .arrow {
+	display: flex;
+}
+
+.more .arrow .arr {
+	height: 20px;
+	width: 4px;
+	background-color: black;
+	border-radius: 5px;
+	margin: 0 4px;
+}
+
+.arr-left {
+	transform: rotate(135deg)
+}
+
+.arr-right {
+	transform: rotate(-135deg)
+}
