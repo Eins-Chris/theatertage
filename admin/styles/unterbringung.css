@@ -1,3 +1,7 @@
+.info .text {
+    margin: 28px 14px;
+}
+
 .btns {
     display: flex;
     justify-content: space-between;
@@ -19,4 +23,17 @@
     transition: all 0.2s;
     margin: 15px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 650px) {
+    .btns .btn {
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .btns .btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
 }

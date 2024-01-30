@@ -130,17 +130,10 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .button {
         padding: 6px 12px;
         font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .button {
-        padding: 4px 8px;
-        font-size: 8px;
     }
 }
 
@@ -156,23 +149,11 @@
     }
 }
 
-@media screen and (max-width: 430px) {
-    .button {
-        padding: 3px 6px;
-        font-size: 7px;
-    }
-}
-
 @media screen and (max-width: 380px) {
     .headline h1 {
         /*margin: 15px 0;*/
         font-size: 20px;
         line-height: 20px;
-    }
-
-    .button {
-        padding: 2px 4px;
-        font-size: 7px;
     }
 
     .post .text p {
