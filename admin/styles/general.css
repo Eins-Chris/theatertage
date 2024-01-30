@@ -209,45 +209,6 @@ h3 {
     flex-direction: column;
 }
 
-.body.darkmode {
-    color: #bfbfbf;
-    background-color: #252424;
-}
-
-.body.darkmode .content .wrapper .group {
-    color: #d3d3d3;
-    background-color: #2f2f2f;
-}
-
-.body.darkmode .content .wrapper .group .box {
-    color: #d3d3d3;
-    background-color: #212121;
-}
-
-.body.darkmode .content .wrapper .blogpost {
-    color: #d3d3d3;
-    background-color: #2f2f2f;
-}
-
-.body.darkmode .content .plan-wrapper .plan {
-    color: #d3d3d3;
-    background-color: #2f2f2f;
-}
-
-
-/*Pläne select button color change*/
-.body.darkmode .content .wrapper .group .h-wrapper .days .selected {
-    color: #d3d3d3;
-    background-color: #212121;
-}
-
-.body.darkmode .content .wrapper .group .h-wrapper .floors .selected {
-    color: #d3d3d3;
-    background-color: #212121;
-}
-
-
-
 
 
 .center {
@@ -339,10 +300,6 @@ h3 {
     }
 }
 
-.body.darkmode .countdown .wrapper {
-    background-color: #2f2f2f;
-}
-
 .countdown .text {
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -369,60 +326,12 @@ h3 {
     text-align: center;
 }
 
-.body.darkmode .countdown .count {
-    color: #1a1b1f;
-}
-
 .countdown .box p {
     margin: 1px 1px 12px 1px;
     text-align: center;
     font-size: 10px
 }
 
-
-.dmtoggle {
-    height: 60px;
-    width: 60px;
-    margin: 20px 20px 0 0;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.dmtoggle .switch {
-    display: block;
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    background-color: #c5c5c5;
-    border-radius: 50%;
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.25), inset 5px 0px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-    background-image: url(../img/darkmode.png);
-    background-size: 95%;
-    background-position: center;
-}
-
-.darkmode .dmtoggle {
-    background-color: #2f2f2f;
-}
-
-.darkmode .dmtoggle .switch {
-    background-image: url(../img/lightmode.png);
-    background-color: #787878;
-}
-
-.body.darkmode .footer-link {
-    color: #f3f3f3;
-}
-
-.body.darkmode .footer-divider {
-    background-color: #000000;
-}
 
 @media screen and (max-width: 950px) {
     /*
@@ -452,10 +361,6 @@ h3 {
     }
 
     .placeholder {
-        display: none;
-    }
-
-    .dmtoggle {
         display: none;
     }
 }
