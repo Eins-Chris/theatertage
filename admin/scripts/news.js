@@ -51,3 +51,11 @@ function getSummary(data) {
   }
   return result;
 }
+
+function getSum(data) {
+  // shortform of summary without <br>
+  var result = getSummary(data);
+  result = result.replace(/<br>/g, "\n");
+  var newresult = result.substr(0, 500) + "..."; // 1000 =~ ca 150 words
+  return newresult;
+}

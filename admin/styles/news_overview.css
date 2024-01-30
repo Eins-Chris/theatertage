@@ -32,3 +32,47 @@
     text-align:end;
 	color: #747474;
 }
+
+.summary {
+    margin: 30px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.more {
+	background-color: #dddddd;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+	margin: 0 15px;
+	height: 60px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.more p {
+    font-size: 22px;
+    line-height: 26px;
+	margin: 4px 0;
+}
+
+.more .arrow {
+	display: flex;
+}
+
+.more .arrow .arr {
+	height: 20px;
+	width: 4px;
+	background-color: black;
+	border-radius: 5px;
+	margin: 0 4px;
+}
+
+.arr-left {
+	transform: rotate(135deg)
+}
+
+.arr-right {
+	transform: rotate(-135deg)
+}

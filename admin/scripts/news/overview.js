@@ -1,8 +1,6 @@
 async function createNewsOverview() {
   const data = await readFile();
 
-  console.log(data);
-
   // skip first row (titles/names)
   for (let i = 1; i < data.length; i++) {
     createNewsOverviewFor(i, data[i]);
@@ -25,6 +23,8 @@ function createNewsOverviewFor(index, post) {
     for (let i = 1; i < 5; i++) {
       group.find(`#${i}`).attr("src", `/news/post/img/${index}/${post[NewsRow[`Img${i}`]]}`)
     }
+
+    group.find(".summary").text(getSum(post));
     
     $(newsContainer).append(group);
   })
