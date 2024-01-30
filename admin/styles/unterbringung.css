@@ -1,3 +1,26 @@
+.wrapper .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    color: #1a1b1f;
+    letter-spacing: 1px;
+    line-height: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #6CAF50;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: all 0.2s;
+    margin-left: 15px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
 .info .text {
     margin: 28px 14px;
 }
