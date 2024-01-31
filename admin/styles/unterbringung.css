@@ -48,6 +48,10 @@
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
+.group .list iframe {
+    width: 100%;
+}
+
 @media screen and (max-width: 650px) {
     .btns .btn {
         padding: 8px 18px;
