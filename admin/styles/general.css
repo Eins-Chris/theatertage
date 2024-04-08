@@ -83,6 +83,11 @@ a {
     /*margin: 0 50px;*/
 }
 
+.content #news {
+    display: flex;
+    align-items: center;
+}
+
 .content .wrapper .group {
     width: 840px;
     margin: 10px 0;
