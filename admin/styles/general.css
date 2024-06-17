@@ -165,6 +165,15 @@ h3 {
     border-radius: 5px;
 }
 
+.grid .numb { grid-area: numb; }
+.grid .loca { grid-area: loca; }
+.grid .name { grid-area: name; }
+
+.content .wrapper .group .list .grid {
+    display: grid;
+    grid-template-areas: 'numb loca name';
+}
+
 .content .wrapper .group .divider {
     /*height: 2px;*/
     /*  background-color: rgb(107, 174, 79);*/
