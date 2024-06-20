@@ -190,6 +190,15 @@ h3 {
     color: #2dad13;
 }
 
+.content .wrapper .group .list .red {
+    color: #e81212;
+}
+
+.content .wrapper .group .list .amplified {
+    font-size: 22px;
+    line-height: 26px;
+}
+
 .content .wrapper .group .list ul {
     /*margin: 8px 15px 5px 15px;*/
     padding: 0 0 0 15px;
