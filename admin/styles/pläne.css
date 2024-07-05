@@ -4,6 +4,12 @@
     margin: 0 50px;
 }
 
+.workshop-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+}
+
 .plan-wrapper a {
     text-decoration: none;
     color: #333;

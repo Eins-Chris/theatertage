@@ -1,0 +1,54 @@
+.gruss img {
+    max-width: 220px;
+}
+
+.gruss img.l {
+    float: left;
+    margin: 12px 10px 10px 0;
+}
+
+.gruss img.r {
+    float: right;
+    margin: 12px 0 10px 10px;
+}
+
+.gruss p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .gruss img {
+        max-width: 220px;
+    }
+}
