@@ -24,31 +24,31 @@
 
 @media screen and (max-width: 800px) {
     .gruss img {
-        max-width: 220px;
+        max-width: 200px;
     }
 }
 
 @media screen and (max-width: 650px) {
     .gruss img {
-        max-width: 220px;
+        max-width: 180px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .gruss img {
-        max-width: 220px;
+        max-width: 160px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .gruss img {
-        max-width: 220px;
+        max-width: 150px;
     }
 }
 
 
 @media screen and (max-width: 380px) {
     .gruss img {
-        max-width: 220px;
+        max-width: 130px;
     }
 }

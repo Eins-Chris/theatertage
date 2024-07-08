@@ -59,6 +59,11 @@
     margin: 0px 26px;
 }
 
+.workshop-wrapper .plan .preview h2 {
+    font-size: 12px;
+    margin: 4px 26px;
+}
+
 .plan .preview p {
     font-size: 8px;
     margin: 0 34px;
