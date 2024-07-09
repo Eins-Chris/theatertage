@@ -76,3 +76,53 @@
 .arr-right {
 	transform: rotate(-135deg)
 }
+
+
+
+
+
+
+.day-wrapper {
+	display: flex;
+    width: 840px;
+    margin: 10px 0;
+}
+
+.day {
+	width: 22%;
+	margin: 0 1.5%;
+    background-color: #8cde69;
+    /*background: white;*/
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.day:hover {
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);*/
+    transition: .5s;
+}
+
+.day .list {
+	display: flex;
+    padding: 4px;
+    border-radius: 10px 10px 20px 20px;
+    background: #ffffff;
+    box-shadow: 0 -5px 5px -3px rgba(0, 0, 0, .15);
+    transition: margin-top .3s ease, padding-top .3s ease, box-shadow .3s ease;
+}
+
+.day:hover .list {
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, .25);
+}
+
+.day .list img {
+    border-radius: 10px 10px 20px 20px;
+	width: 100%;
+}
+
+.day h1 {
+    text-align: center;
+    margin: 25px 0 15px 0;
+    font-size: 30px;
+}
