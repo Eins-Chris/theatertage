@@ -7,54 +7,69 @@
 }
 
 .h-wrapper {
+    padding-top: 8px;
     display: flex;
     justify-content: center;
 }
 
-.h-wrapper .month {
-    margin: 0 40px;
+.h-wrapper .month,
+.h-wrapper .stockwerk {
+    margin: 0 38px;
     color: #409443;
 }
 
-.h-wrapper .month h1 {
-    font-size: 40px;
-    margin: 30px 0;
+.h-wrapper h1 {
+    font-size: 36px;
+    margin: .75em 0;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
-.h-wrapper .days {
+.h-wrapper .days,
+.h-wrapper .floors {
     display: flex;
+    gap: 5px;
     align-items: center;
 }
 
-.days .d-wrapper {
+.days .d-wrapper,
+.floors .f-wrapper {
     height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin: 10px 5px 0 5px;
+    padding: 0 8px;
 }
 
-.days .selected {
+.days .selected,
+.floors .selected {
     background-color: white;
     border-radius: 20px 20px 0 0;
 }
 
-.days .selected {
-    background-color: white;
-    border-radius: 20px 20px 0 0;
-}
-
-.days .d-wrapper .day {
+.days .d-wrapper .day,
+.floors .f-wrapper .floor {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
     border-radius: 50%;
     border-style: solid;
+    border-width: 2px;
     margin: 4px;
     color: #4caf50;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.days .d-wrapper.selected .day,
+.floors .f-wrapper.selected .floor {
+    background-color: #4caf50A0;
+    border-color: transparent;
+    color: white;
 }
 
 .plan .box {
@@ -82,48 +97,6 @@
     font-size: 20px;
 }
 
-
-
-.h-wrapper .stockwerk {
-    margin: 0 40px;
-    color: #409443;
-}
-
-.h-wrapper .stockwerk h1 {
-    font-size: 40px;
-    margin: 30px 0;
-}
-
-.h-wrapper .floors {
-    display: flex;
-    align-items: center;
-}
-
-.floors .f-wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 10px 5px 0 5px;
-}
-
-.floors .selected {
-    background-color: white;
-    border-radius: 20px 20px 0 0;
-}
-
-.floors .f-wrapper .floor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    border-radius: 50%;
-    border-style: solid;
-    margin: 4px;
-    color: #4caf50;
-}
 
 .plan .box {
     border-radius: 25px;
@@ -177,6 +150,15 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .h-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .days .d-wrapper,
+    .floors .f-wrapper {
+        padding: 4px 8px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -184,10 +166,11 @@
         border-radius: 15px 15px 25px 25px;
     }
 
-    .h-wrapper .days .d-wrapper .day {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
+    .days .d-wrapper .day,
+    .floors .f-wrapper .floor {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
     }
 
     .plan .box .b-wrapper h2 {
