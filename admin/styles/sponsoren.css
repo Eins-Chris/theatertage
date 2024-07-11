@@ -1,6 +1,6 @@
 .group .list {
 	display: flex;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	overflow: hidden;
 	gap: 8px;
