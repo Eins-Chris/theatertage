@@ -47,6 +47,8 @@
 .plan .preview {
     position: relative;
     top: -8%;
+    display: flex;
+    flex-direction: column;
 }
 
 .plan .preview h1 {
@@ -80,11 +82,6 @@
 
 .plan.right {
     margin-left: 20px;
-}
-
-.plan.right .preview {
-    display: flex;
-    flex-direction: column;
 }
 
 .plan .more {
