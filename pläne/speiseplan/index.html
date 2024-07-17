@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Theatertage - Mahlzeiten Plan</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/admin/styles/general.css" rel="stylesheet">
+    <link href="/admin/styles/nav.css" rel="stylesheet">
+    <link href="/admin/styles/footer.css" rel="stylesheet">
+    <link href="/admin/styles/sub_pläne.css" rel="stylesheet">
+    <link href="/admin/img/shortcut.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/admin/img/webicon.png" rel="apple-touch-icon">
+    <script crossorigin='anonymous' src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(function() {
+            $(".nav").load("/admin/preset/nav.html");
+            $(".top").load("/admin/preset/top.html");
+            $(".footer").load("/admin/preset/footer.html");
+        })
+    </script>
+</head>
+
+<body class="body" id="body">
+    <section class="nav"></section>
+    <section class="top"></section>
+
+    <section class="content">
+        <div class="wrapper">
+            <div class="plan">
+                <div class="h-wrapper">
+                    <div class="month">
+                        <h1>Juli</h1>
+                    </div>
+                    <div class="days">
+                        <div class="d-wrapper selected" id="d17" onclick="d17()">
+                            <div class="day">17</div>
+                        </div>
+                        <div class="d-wrapper" id="d18" onclick="d18()">
+                            <div class="day">18</div>
+                        </div>
+                        <div class="d-wrapper" id="d19" onclick="d19()">
+                            <div class="day">19</div>
+                        </div>
+                        <div class="d-wrapper" id="d20" onclick="d20()">
+                            <div class="day">20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <section class="b-wrapper selected" id="b17">
+                        <img src="https://theatertage2024.de/admin/img/speiseplan_0.png" alt="Speiseplan0">
+                    </section>
+                    <section class="b-wrapper" id="b18">
+                        <img src="https://theatertage2024.de/admin/img/speiseplan_1.png" alt="Speiseplan1">
+                        <h2>Information:</h2>
+                        <p>*Heimatgenuss im Bruckmüller <br>
+                        (unmittelbar beim Stadttheater) <br>
+                        Vilsstraße 2 <br>
+                        92224 Amberg</p>
+                        <br>
+                        <p>**Zentral <br>
+                        (direkt am Marktplatz) <br>
+                        Marktplatz 6 <br>
+                        92224 Amberg</p>
+                    </section>
+                    <section class="b-wrapper" id="b19">
+                        <img src="https://theatertage2024.de/admin/img/speiseplan_2.png" alt="Speiseplan2">
+                    </section>
+                    <section class="b-wrapper" id="b20">
+                        <img src="https://theatertage2024.de/admin/img/speiseplan_3.png" alt="Speiseplan3">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer"></section>
+    <script src="/admin/scripts/countdown.js"></script>
+    <script src="/admin/scripts/pläne/ablauf.js"></script>
+</body>
