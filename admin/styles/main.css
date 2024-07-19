@@ -1,3 +1,7 @@
+.group .list video {
+    width: 100%;
+}
+
 .gruss img {
     max-width: 220px;
 }
